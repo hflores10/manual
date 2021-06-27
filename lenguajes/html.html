@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Manual de HTML por Henry Flores</title>
+    <style media="screen">
+      .enfacis {
+                color:red;
+                text-decoration:underline;
+                font-weight:bold;
+                }
+    </style>
+  </head>
+  <body>
+    <h2>Reglas aplicables a los atributos</h2>
+    <ul>
+      <li>El atributo tiene que aparecer despues del nombre la etiqueta HTML.</li>
+      <li>El nombre del atributo tiene que ir seguido de un signo (=).</li>
+      <li>El valor de atributo tiene que ir inmediatamente despues del signo igual</li>
+      <li>El valor del atributo siempre tiene que ir entre comillas simples o dobles.</li>
+
+    </ul>
+    <h2>Existen unos 147 nombres de colores (atributos para color) que podemos encontrar en sitios como: www.w3schools.com/html/html_colornames.asp</h2>
+    <p>Para valores hexdecimales  se mezclan colores especificando cantidades definidas de colores primarios: rojo, verde, azul en el formato hexadecimal "#RRGGBB".<br/>
+    Ejemplo: #FF00FF (Morado: Rojo y azul).<br/>
+    Valores RGB en formato decimal: "RGB(R,G,B)".En este caso los valores se especifican con números del 0 al 255 o con porcentajes<br/>
+    Ejemplo:"rgb(255,0,255)" (Maximo rojo, cero verde, maxino azul = Morado)</p>
+    <h2>Atributos comunes:</h2>
+    <p>Atributo id:<br/>
+    El atributo id aisgna un identificador único a una etiqueta. Muy útil cuando referenciamos etiquetas desde scripts.<br/>
+    Atributo class:<br/>
+    El atributo clase asisgna el mismo identificador a más de una etiqueta. Muy útil cuando referenciamos etiquetas desde css para darle estilos al contenido.<br/>
+    Se pueden aplicar estilos directamente sobre las etiquetas usando el atributo: style="style-definition; style-definition" </p>
+    <h2>Texto y comentarios:</h2>
+    <p>Los textos y comentarios permiten hacer más legible los documentos e incluyen información adicional que funciones futuras puedan acceder a ella.<br/>
+    Ejemplos de comentarios: <br/>
+    <p>&lt;!-- Este es un comentario --&#62;<br/>
+    &#60;!--Este es otro comentario con valores decimales y hexadecimales.--&#x3E;<br/>
+    <h1>&copy;</h1></p>
+    <ul>
+      <li>Código mnemotécnico (copy para el sأ­mbolo de copyright).</li>
+      <li>Valor decimal correspondiente al carácter(#169 para el símbolo de copyright).</li>
+      <li>Valor hexadecimal correspondiente al carácter (como #xA9 para el sí­mbolo de copyright).</li>
+    </ul>
+    Los comentarios no se pueden anidar.</p>
+    <h2>Sección CDATA</h2>
+    <p>Para realizar comentarios más largos.<br/>
+    Los datos de un comentario o una sección DATA se pueden leer en la visualización del código fuente.</p>
+    <h2>Enlazar documentos e imágenes</h2>
+    <p>Ejemplos><a href="http://www.example.com/detailspecs.html">Details</a></p>
+    <img src="http://www.example.com/detail.jpg" alt="details"/>
+    <p>Idiomas:<br/>
+    Ubica los codigos de idiomas en RFC1766 o en www.ietf.org/rfc/rfc1766.txt </p>
+    <h2>Dirección del texto:</h2>
+    <p>Usamos el atributo dir y el valor ltr o rtl</p>
+    <h2>Bloques de contenido</h2>
+    <pre>
+    <p> párrafo con formato</p>
+    <h1>Encabezados</h1>
+    <blockquote cite="http://">Citas </blockquote>
+    <ul>
+      <li>Lista</li>
+    </ul>
+    <p>Lista de definición o Definition list (dl), Definition term (dt), Definition description (dd)</p>
+    <dl class="">
+      <dt>Definition term o Término de definición</dt>
+        <dd>Definition description o Descripción de la definición</dd>
+    </dl>
+    <center>
+    <div class=""></div>
+
+    </pre>
+    <dl class="list">
+      <dt></dt>
+
+    </dl>
+    <h2>Divisiones:</h2>
+    <p>Las divisiones se usan para agrupar diferentes
+    objetos en un contenedor más grande.</p>
+    <h2>Elementos en líneas: Marcado de caracteres.</h2>
+    <p><b>(b) Negrita o bold</b><br/>
+    <i>(i) Cursiva o italic</i><br/>
+    <big> (big) Texto grande o big</big><br/>
+    <small>(small) Texto pequeño o small</small><br/>
+    <em>(em) Texto enfatizado</em><br/>
+    <strong>(strong) Texto fuerte</strong><br/>
+    <tt>(tt) Teletipo o mono espacio </tt><br/>
+    <strike> (strike) Tacha</strike><br/>
+    <u>(u) subrayada o underlined</u><br/>
+    <strike>(del, ins, font)</strike><br/>
+    <em>(em) Enfatizado o Emphasized</em></p>
+
+    <h2>Expandir texto:</h2>
+    <p><span class="enfacis">Las etiquetas (span) se utilizan para expandir estilos en uno o más caracteres o palabras en línea.</span>,
+    este texto no está، enfatizado.</p>
+    <h2>Caracteres especiales (Entidades)</h2>
+    <p>&#151;Guiones em.</p>
+    <h2>Elementos de organización:</h2>
+
+
+  </body>
+</html>
