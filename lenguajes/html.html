@@ -12,7 +12,7 @@
     </style>
   </head>
   <body>
-    <h2>Reglas aplicables a los atributos</h2>
+    <h2 id="rulers">Reglas aplicables a los atributos</h2>
     <ul>
       <li>El atributo tiene que aparecer despues del nombre la etiqueta HTML.</li>
       <li>El nombre del atributo tiene que ir seguido de un signo (=).</li>
@@ -34,9 +34,9 @@
     <h2>Texto y comentarios:</h2>
     <p>Los textos y comentarios permiten hacer más legible los documentos e incluyen información adicional que funciones futuras puedan acceder a ella.<br/>
     Ejemplos de comentarios: <br/>
-    <p>&lt;!-- Este es un comentario --&#62;<br/>
-    &#60;!--Este es otro comentario con valores decimales y hexadecimales.--&#x3E;<br/>
-    <h1>&copy;</h1></p>
+    <p>lt;!-- Este es un comentario --#62;<br/>
+    #60;!--Este es otro comentario con valores decimales y hexadecimales.--#x3E;<br/>
+    <h1>&copy; copy</h1></p>
     <ul>
       <li>Código mnemotécnico (copy para el sأ­mbolo de copyright).</li>
       <li>Valor decimal correspondiente al carácter(#169 para el símbolo de copyright).</li>
@@ -46,8 +46,12 @@
     <h2>Sección CDATA</h2>
     <p>Para realizar comentarios más largos.<br/>
     Los datos de un comentario o una sección DATA se pueden leer en la visualización del código fuente.</p>
-    <h2>Enlazar documentos e imágenes</h2>
-    <p>Ejemplos><a href="http://www.example.com/detailspecs.html">Details</a></p>
+    <h2 id="oWeb">Enlazar documentos e imágenes</h2>
+    <p>Ejemplos: <a href="http://www.example.com/detailspecs.html">Enlace a otra WEB</a></p>
+    <p>Ejemplo: El atributo (alt) proporciona una alternativa de texto
+        si no se puede mostar o ver la imagen. Las imagenes de navegación
+        se conocen como mapa de imagenes (image maps).
+    </p>
     <img src="http://www.example.com/detail.jpg" alt="details"/>
     <p>Idiomas:<br/>
     Ubica los codigos de idiomas en RFC1766 o en www.ietf.org/rfc/rfc1766.txt </p>
@@ -149,6 +153,15 @@
         <input type="reset" name="reset" value="Restablecer"/></p>
 
     </form>
+    <h2>Vínculos a otra página</h2>
+    <p>Ejemplos: <br/>
+      <span>&#60;a href="head.html"&#x3E; Elementos de encabezado.</span><br/>
+      <a href="head.html">Elementos de encabezado</a><br/>
+      <p>Ejemplos:</p>
+      <span>#60; a href="#rulers" #x3E; Reglas de atributos</span><br/>
+      <a href="#rulers">Reglas de atributos</a><br/>
+      <a href="#oWeb">Cómo enlazar a otra WEB</a>
+     </p>
 
     <h2>Rutas</h2>
     <p>.. Directorio padre <br/>
