@@ -103,10 +103,56 @@
     <h2>Elementos de organización:</h2>
     <p>Tablas y formularios <br/>
         Tablas: Presentan datos en formato de filas y columnas <br/>
-        Formularios: Recuperamos datos de una GUI (Interfaz gráfica de usuario)</p>
+        Formularios: Recuperamos datos de una GUI (Interfaz gráfica de usuario)
+    </p>
+    <p>La etiqueta &#60;table&#x3E; delimita la tabla.</p>
+    <p>Las filas de datos quedan definidas y delimitadas por las etiquetas &#60;tr&#x3E; (table row)</p>
+    <p>Las celdas de tablas, o fragmentos individuales de datos, quedan definidas y delimitadas
+        por etiquetas &#60;td&#x3E;(table data). Alternativamente usamos &#60;th&#x3E; para la fila
+        de encabezado</p>
+    <p>Ejemplos:</p>
+    <table border="1">
+      <tr><th>Upgrade</th> <th>Unit Cost</th> </tr>
+      <tr> <td>Cargo Container</td><td>300</td></tr>
+      <tr> <td>Extended Range Radar</td><td>1000</td></tr>
+      <tr><td>Redundant Computers</td><td>4000</td> </tr>
+      <tr><td>Turrent Auto-Target</td><td>500</td>  </tr>
+      <tr><td>Zeno Hyperdrive</td><td>10000</td> </tr>
+
+    </table>
+    <h2>Formularios:</h2>
+    <p>Ejemplo:</p>
+    <form class="" action="index.html" method="post">
+        <p>&#60;!-- Campo del texto --&#x3E;</p>
+        <b>Nombre:</b> <input type="text" name="name" value="" size="40">
+        <br></br>
+        <p>&#60;!-- Botones de radio --&#x3E;</p>
+        <b>Edad</b> <input type="radio" name="age" value="">&#60;20
+        <input type="radio" name="age" value=""> 21--30
+        <input type="radio" name="age" value=""> 31--40
+        <input type="radio" name="age" value=""> 41+
+        <br></br>
+        <p>&#60;!-- Seleccionar lista --&#x3E;</p>
+        <b>Cuál es tu tipo de juego favorito?</b>
+        <select class="" name="game">
+          <option name="action" value=""></option>Acción
+          <option name="adventure"></option>Aventura
+          <option name="rpg"></option>RPG
+        </select>
+        <br></br>
+        <p>&#60;!-- Casilla de verificación --&#x3E;</p><br/>
+        <b>Como puedo contactarte</b><br/>
+        <input type="checkbox" name="phone" value=""/>Teléfono <br/>
+        <input type="checkbox" name="mail" value=""/>Correo <br/>
+        <input type="checkbox" name="no" value=""/>No contactarme<br/>
+        <p><input type="submit" name="" value="Enviar"/>
+        <input type="reset" name="reset" value="Restablecer"/></p>
+
+    </form>
+
     <h2>Rutas</h2>
     <p>.. Directorio padre <br/>
-        Ejemplo: ../ (Busca a partir del directorio anterior al actual. Al directorio padre.)</p>
+        Ejemplo: ../ (Busca a partir del directorio anterior al actual. En el directorio padre.)</p>
 
 
   </body>
