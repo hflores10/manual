@@ -17,7 +17,22 @@
     <p>Para crear y extraer una nueva rama:<br/>
     git checkout -b nueva_rama</p>
     <p>Para crear y extraer una rama distinta del HEAD actual:<br/>
-    git checkout -b nueva_rama rama_existente </p>
+    git checkout -b nueva_rama rama_existente
+   </p>
+    <p>Para configurar nombre de usuario y correo <br/>
+      git config --global user.name usuario_nombre <br/>  
+      git config --global user.email usuario_@correo
+    </p>
+    <p>Para fusionar los cambios con la rama master, main, etc <br/>
+      desde la rama que absorverá los cambios: <br/>
+      git merge rama_de_procedencia_de_cambios
+    </p>
+    <p>Para subir los cambios a un repositorio remoto: <br/>
+      git remote add origin URL_del_repositorio <br/>
+      git remote (Ver repositorio) <br/>
+      git remote -v (Ver links de repositorios remotos) <br/>
+      git push -u origin master
+    </p>
 
 
 
