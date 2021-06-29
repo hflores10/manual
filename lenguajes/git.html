@@ -6,6 +6,10 @@
   </head>
   <body>
     <h1>Comandos básicos de Git</h1>
+    <p>Ayuda de git para comandos y comandos específicos <br/>
+        git help <br/>
+        git help nombre_del_comando
+    </p>
     <p>Empezar a monitorear proyecto, carpeta o repositorio <br/>
         git init <br/>
     </p>
@@ -30,23 +34,22 @@
         git checkout codigo_hash <br/>
         Movernos al último commit que tenemos <br/>
         git checkout master <br/>
+        Generamos un txt con la lista de commits <br/>
+        git log &#x3E;commits.txt <br/>
         git reset es parecido a git checkout con la diferencia de que <br/>
         borra los commits: </p>
 
         <details open>
           <summary>git reset</summary>
             <dl>
-              <dt><a href="">git reset --soft</a></dt>
+              <dt><a href="./level1/reset.html#resetsoft">git reset --soft</a></dt>
               <dd>No toca el Working Area / No borra el código</dd>
-              <dt><a href="">git reset --mixed</a></dt>
+              <dt><a href="./level1/reset.html#resetmixed">git reset --mixed</a></dt>
               <dd>No toca el working Area pero borra el Staging Area</dd>
-              <dt><a href="">git reset --hard</a></dt>
+              <dt><a href="./level1/reset.html#resethard">git reset --hard</a></dt>
               <dd>Borra absolutamente todo lo que hay en el commit</dd>
             </dl>
       </details>
-
-    
-
 
     <p>Para clonar un repositorio remoto:<br/>
     git clone https://www.github.com/hflores07/manual.git</p>
