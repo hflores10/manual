@@ -5,7 +5,49 @@
     <title>Manual de git por Henry Flores</title>
   </head>
   <body>
-    <h1>Git</h1>
+    <h1>Comandos básicos de Git</h1>
+    <p>Empezar a monitorear proyecto, carpeta o repositorio <br/>
+        git init <br/>
+    </p>
+    <p>Ver el estado del proyecto, si hay cambios por guardar, <br/>
+        archivos o carpetas nuevos. <br/>
+        git status
+    </p>
+    <p>Agregar archivos al repositorio <br/>
+      git add nombre_de_archivo / git add file_name <br/>
+      (Agrega un archivo). Para agregar todos los archivos usa <br/>
+      git add -A
+    </p>
+    <p>Guardar los cambios que hicimos en el repositorio <br/>
+        git commit -m "este_es_un_mensaje"
+    </p>
+    <p>Listamos los commits con su información respectiva <br/>
+        git log <br/>
+        Nos dará autor, fecha, código hash, los mensajes aparecen <br/>
+        en el final de la descripción.
+    </p>
+    <p>Para viajar en el tiempo entre commits o ramas <br/>
+        git checkout codigo_hash <br/>
+        Movernos al último commit que tenemos <br/>
+        git checkout master <br/>
+        git reset es parecido a git checkout con la diferencia de que <br/>
+        borra los commits: </p>
+
+        <details open>
+          <summary>git reset</summary>
+            <dl>
+              <dt><a href="">git reset --soft</a></dt>
+              <dd>No toca el Working Area / No borra el código</dd>
+              <dt><a href="">git reset --mixed</a></dt>
+              <dd>No toca el working Area pero borra el Staging Area</dd>
+              <dt><a href="">git reset --hard</a></dt>
+              <dd>Borra absolutamente todo lo que hay en el commit</dd>
+            </dl>
+      </details>
+
+    
+
+
     <p>Para clonar un repositorio remoto:<br/>
     git clone https://www.github.com/hflores07/manual.git</p>
     <p>Para ignorar archivos o carpetas:<br/>
@@ -36,7 +78,7 @@
       git remote add origin URL_del_repositorio <br/>
       git remote (Ver repositorio) <br/>
       git remote -v (Ver links de repositorios remotos) <br/>
-      git push -u origin master
+      git push -u origin master / git push origin master
     </p>
 
 

@@ -38,7 +38,7 @@
     #60;!--Este es otro comentario con valores decimales y hexadecimales.--#x3E;<br/>
     <h1>&copy; copy</h1></p>
     <ul>
-      <li>Código mnemotécnico (copy para el sأ­mbolo de copyright).</li>
+      <li>Código mnemotécnico (copy para el símbolo de copyright).</li>
       <li>Valor decimal correspondiente al carácter(#169 para el símbolo de copyright).</li>
       <li>Valor hexadecimal correspondiente al carácter (como #xA9 para el sí­mbolo de copyright).</li>
     </ul>
@@ -63,12 +63,18 @@
     <h1>Encabezados</h1>
     <blockquote cite="http://">Citas </blockquote>
 
-    <p>Lista anidada en: </p>
-    <p>&#60; #60 details #x3E &#x3E;</p>
-    <p>&#60; #60 summary #x3E &#x3E;</p>
-    <ul>
-      <li>Lista</li>
-    </ul>
+    <p id="list">Lista anidada con (details, summary, ul, ol) </p>
+      
+        &#60; #60 details #x3E &#x3E;
+
+        &#60; #60 summary #x3E &#x3E;título &#60;/summary&#x3E;
+            <ol>
+              <li>ONE</li>
+              <li>TWO</li>
+              <li>THREE</li>
+           </ol>
+        &#60;/details&#x3E;
+      
 
     <p>Lista de definición o Definition list (dl), Definition term (dt), Definition description (dd)</p>
     <dl class="">
@@ -166,7 +172,24 @@
     <h2>Rutas</h2>
     <p>.. Directorio padre <br/>
         Ejemplo: ../ (Busca a partir del directorio anterior al actual. En el directorio padre.)</p>
+    <h2>Widgets</h2>
+    <p>Programa pequeño o aplicación muy similar a un <a href="../nivel1/english.html#shortcut">shortcut</a></p>
+    <pre>
+    &#60;pre&#x3E;
+      &#60;details&#x3E; <br/>
+        &#60;summary&#x3E; Aquí_va_el_título &#60;/summary&#x3E;<br/>
+        &#60;ol&#x3E; <br/>
+          &#60;li&#x3E; ONE <br/>
+          &#60;li&#x3E; TWO <br/>
+          &#60;li&#x3E; THREE <br/>
 
+        &#60;/ol&#x3E; <br/>
+
+      &#60;/details&#x3E;
+    &#60;/pre&#x3E;      
+    </pre>
+    <p><a href="#list">Vista de la lista</a></p>
+    
 
   </body>
 </html>
