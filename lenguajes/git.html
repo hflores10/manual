@@ -31,9 +31,16 @@
         en el final de la descripción.
     </p>
     <p>Para viajar en el tiempo entre commits o ramas <br/>
+        El HEAD siempre es el commit en el que nos encontremos <br/>
         git checkout codigo_hash <br/>
         Movernos al último commit que tenemos <br/>
         git checkout master <br/>
+        Movernos a una rama <br/>
+        git checkout nombre_de_rama <br/>
+        Crear una <a href="#newbranch">rama</a> y moverno a ella en una sola línea <br/>
+        git checkout -b nueva_rama <br/>
+        Eliminar una rama <br/>
+        git branch -D nombre_de_rama_a_eliminar <br/>
         Generamos un txt con la lista de commits <br/>
         git log &#x3E;commits.txt <br/>
         git reset es parecido a git checkout con la diferencia de que <br/>
@@ -62,7 +69,7 @@
     git branch -M main </p>
     <p>Para crear y extraer una nueva rama:<br/>
     git checkout -b nueva_rama</p>
-    <p>Para crear y extraer una rama distinta del HEAD actual:<br/>
+    <p id="newbranch">Para crear y extraer una rama distinta del HEAD actual:<br/>
     git checkout -b nueva_rama rama_existente
    </p>
     <p>Para configurar nombre de usuario y correo <br/>
