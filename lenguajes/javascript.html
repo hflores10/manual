@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <title>Breve manual de Javascript</title>
+  </head>
+  <body> 
+    <!-- Usar editorconfig como plugin para las indentaciones
+    -->
+    <h1>Formas de declarar variables </h1><span>// var, variables globales.</span>
+    <p>
+      // left, variables limitadas al alcance del bloque en el que se definen.</p>
+    <p></p><strong>const</strong>, son variables inmutables.
+    <p>Tipos de variables</p>
+    <p>
+      Las variables tipo string van entre comillas  var nombre='Henry'</p>
+    <p>
+      Las variables de tipo número var numero=50</p>
+    <p>
+      Las constantes const pi=3.1416</p>
+    <p>
+      La variable nula var no_valido=null</p>
+    <p>
+      La variable undefined var indefinido=undefined</p>
+    <p>
+      La variable boleana var booleanos=true</p>
+    <p>
+      Tipo de variable console.log(typeof tipo_de_variable)</p>
+    <p>const Pix=Math.PI</p>
+    <p>Métodos String / Interpolación de texto <br/> 
+      console.log(nombre + edad + ' años')<br/> 
+      console.log(`${nombre} ${edad} años`)
+    </p>
+    <p>
+      Todos los métodos string en Objetos globales Mozilla</p>
+    <p>
+      console.log(nombre.toUpperCase()) var nombre_Mayus= nombre.toUpperCase()        </p>
+    <p>console.log(nombre.length)</p>
+    <p>indexOf(Verifica_la_existencia_de_sub_cadenas) </p>
+    <p>substring(Extrae_sub_cadenas)</p>
+    <p>+ y += concatenan cadenas.</p>
+    <p>const string1 = "Una cadena primitiva";<br/>const string2 = 'También una cadena primitiva';<br/>const string3 = `Otra cadena primitiva más`;<br/>Uso del constructor String() <br/> 
+      const string4 = new String("Un objeto String");
+    </p>
+    <p>
+      Otra forma es tratar a la cadena como un objeto similar a un arreglo, donde los caracteres 
+      individuales corresponden a un índice numérico.<br/> 
+      <strong>return 'cat'[1]</strong> // devuelve "a"
+    </p>
+    <p>Método localeCompare()<br/> 
+      console.log(nombre1[1].localeCompare('a'))<br/> 
+      console.log(cadena_de_referencia.<br/> 
+      localeCompare('cadena_de_comparacion'))
+    </p>
+    <p>Descripción<br/> 
+      Returns an integer indicating whether the referenceStr comes before, after or is equivalent to the compareStr.<br/>    
+      Negative when the referenceStr occurs before compareStr<br/> 
+      Positive when the referenceStr occurs after compareStr<br/> 
+      Returns 0 if they are equivalent<br/> 
+      NO CONFIAR en que los valores devueltos 
+      sean siempre -1 o 1. Los resultados de 
+      enteros negativos y positivos varían entre 
+      los navegadores (así como entre diferentes 
+      versiones de un mismo navegador) porque la 
+      especificación W3C solo exige valores 
+      negativos y positivos. Algunos navegadores 
+      pueden devolver -2 o 2 o incluso algún 
+      otro valor negativo o positivo.
+    </p>
+    <p>Sintaxis<br/>referenceStr.localeCompare(compareString[, locales[, options]])    </p>
+    <p>function isEqual(str1, str2)<br/>{<br/>return str1.toUpperCase() === str2.toUpperCase()<br/> 
+      } // isEqual<br/> 
+      En esta función se utilizan mayúsculas en lugar de minúsculas, debido a problemas con ciertas conversiones de caracteres UTF-8.
+    </p>
+    <p>Un objeto String siempre se puede convertir a su contraparte primitiva con el método valueOf().<br/> 
+      let s2 = new String('2 + 2')<br/> 
+      console.log(eval(s2.valueOf()))  // devuelve el número 4
+    </p><a href="https://asecuritysite.com/coding/asc2">Tabla utf-16</a>
+    <p>String.prototype.concat(str[, ...strN])</p>
+    <p>Qué es un operador.</p>
+  </body>
+</html>

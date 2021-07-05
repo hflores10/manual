@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de comandos de Linux</title>
+</head>
+<body>
+    <h1>Repartición de disco</h1>
+    <h2>FIPS: Cambiar el tamaño de particiones del disco</h2>
+    <h2>fdisk: Herramienta de particionado de disco</h2>
+    <H1>El gesto de arranque: LILO</H1>
+    <p>Linux concreta todo su poderío en un núcleo monolítico comúnmente denominado Kernel.
+        Éste, al aumentar cada día su tamaño, debe ser cargado por algún programa más pequeño
+        que quepa en un sector booteable estándar y que se encargue de gestionar el proceso 
+        de arranque. El gestor oficial de Linux es LILO.
+    </p>
+    <h2>&iquest;QUÉ ES KERNEL?</h2>
+    El núcleo o kernel es el corazón del sistema operativo. En el caso de linux se le denomina
+    núcleo monolítico ya que todas sus partes están integradas dentro de un solo archivo.
+    LILO nos permite bootear diferentes sistemas operativos, inclusive si estos están instalados
+    en la misma máquina. Se carga en la MBR de la unidad de disco duro principal y presenta un 
+    prompt que nos permite seleccionar el sistema operativo a iniciar por medio de etiquetas.
+    <h2>Configuración manual de LILO: el archivo/etc/lilo.conf</h2>
+    Todos los datos de configuración de LILO se almacenan en este archivo, el cual no es otra 
+    cosa que un archivo con seciones y sus respectivos valores.
+    <p>
+        Lo contrario de mkdir es rmdir y sirve para borrar directorios: <br/>
+        rmdir my_directory <br/>
+        para borrar archivos: rm <br/>
+        para borrar tanto archivos como directorios recursivamente: rm -r my_directorio <br/>
+        para borrar por fuerza todo lo que se le pide: rm -rf my_directorio.
+    </p>
+    <p>
+        ls: Hay sistemas en los que los diferencia los ficheros de uso especial (como los directorios 
+        o los ejecutables) de los normales de forma tipográfica.
+    </p>
+    <p>Contenido de un archivo: more y less</p>
+    <p>
+        
+    </p>
+</body>
+</html>
