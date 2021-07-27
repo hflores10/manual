@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html> 
+  <head> 
+    <title> </title>
+  </head>
+  <body> 
+    <h1>Nociones básicas </h1>
+    <h2>Reglas de CSS</h2>
+    <p>
+      Las reglas de CSS se componen de selectores.  un selector es una forma de referirnos a 
+      una parte del documento HTML.
+    </p><strong>Ejemplos:<br/>Referencias a etiquetas (Selector de etiquetas) </strong>
+    <pre>body{<br/>
+      <!-- Aquí van las propiedades y valores-->background-color: coral;
+}</pre>
+    <p>
+      En CSS hay muchos estilos que se heredan con los mismos valores (desde la etiqueta del selector hacia abajo) </p>
+    <p>Para importar una hoja de estilo dentro de otra hoja de estilo: <br/> 
+      @import './botones.css'
+    </p>
+    <h2>Selectores de clase </h2>
+    <p>
+      El atributo clase (class) se puede repetir, pero el atributo id es único en cada página.</p>
+    <p>otros valores de propiedades: <br/> 
+      inline-size:32; (Ancho del texto de la linea) <br/> 
+      block-size: 32; (Alto del texto en el eje Y) <br/> 
+      background-color: transparent (Color de fondo del elemento) 
+    </p>
+    <p>
+      Cuando el ancho es más grande los botones (por ejemplo) se empiezan a repetir, pero esto se puede corregir con 
+      background-repeat: no-repeat<br/> 
+      background-position: center (Centra el contenido si la caja es 
+      más grande)
+    </p>
+    <p>
+      Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por 
+      ejemplo :hover (aplicará un estilo cuando el usuario haga hover 
+      sobre el elemento especificado por el selector) 
+    </p>
+    <p> </p>
+  </body>
+</html>
