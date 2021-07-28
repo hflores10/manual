@@ -33,10 +33,17 @@
         pug -w archivo.pug (Compila cada vez que cambie el archivo)<br/>
         pug -w --pretty archivo.pug (Compila con indentación) <br/>
         pug directorio (Compila todos los archios en ese directorio).
-
-
-
     </p>
+    <h1>Código JavaScript en PUG</h1>
+    <p>Hay dos formas de insertar código JavaScript en PUG </p>
+    <p>Unbuffered(No sale a HTML): Se escribe, empieza con un guión <br/>
+        Ejemplo <br/>
+        - let mane='Henry Flores'
+    </p>
+    <p>buffered(Si sale a HTML): Se escribe con un = <br/>
+        = name
+    </p>
+    <p></p>
     
 </body>
 </html>
