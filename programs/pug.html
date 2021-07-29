@@ -38,12 +38,67 @@
     <p>Hay dos formas de insertar código JavaScript en PUG </p>
     <p>Unbuffered(No sale a HTML): Se escribe, empieza con un guión <br/>
         Ejemplo <br/>
-        - let mane='Henry Flores'
+        - let name='Henry Flores'
     </p>
     <p>buffered(Si sale a HTML): Se escribe con un = <br/>
-        = name
+        p= name (Tener cuidado con el espacio entre la etiqueta y el signo igual) <br/>
+        p= name + ',cadena_de_texto' (Aquí estamos concatenando). <br/>
+        p= `${name} cadena_de_texto` (A partir de EMAS6 por templates). <br/>
+        Aplicable dentro de clases: <br/>
+        -let correntPage='home'
+        body (class=currentPage) dará como resultado un html con etiqueta <br/>
+        &#60;body class='home'&#x3E; <br/>
+        body (class=currentPage).otras_clases (Para agregar más clases).
+        Para usar javaScript de varias lineas en PUG debes empezar el codigo con 
+        un guión + salto de linea + indentación
     </p>
-    <p></p>
+    <h1>Condicionales en PUG</h1>
+    <p> Las variables creadas en un archivo PUG se puden utilizar en otro archivo. 
+        Se puede incluir ese archivo con un INCLUDE en todas las páginas internas.
+    </p>
+    <p> PUG como tal ya trae condicionales y se pude obiar el guión, el parentesis 
+        y las llaves. <br/>
+        Ejemplo: <br/>
+        <pre>
+            if 5 &#60; 3
+                p la_condición_es_verdadera
+            else
+                p la_condición_es_falsa    
+            
+                - var nombre='Henry'
+                
+                if nombre ==='Henry'
+                    p 'El nombre es '+nombre
+                else
+                    p 'No tiene nombre'
+        </pre>
+
+    </p>
+    <h1>Ciclos (iteraciones)</h1>
+    <p>
+        <pre>
+            - var days=['lunes', 'martes','miercoles']
+            each day, i in days
+                p= `${day.toUpperCase()} es el día ${i+1}`
+            
+            - paginas=['home','quienes somos','contacto'] 
+
+            ul 
+                each pagina in paginas
+                    li: a(href=`${pagina.split(' ').join('_')}.html)=pagina
+                else 
+                    li No hay elementos disponibles
+            
+        </pre>
+
+    </p>
+    <h1>Recorrer objetos</h1>
+    <p>
+        
+    </p>
+    <p>
+        p: a: br: (los dospuntos se indican para colocar etiquetas hijas)
+    </p>
     
 </body>
 </html>
