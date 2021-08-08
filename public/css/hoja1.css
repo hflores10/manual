@@ -1,0 +1,144 @@
+body {
+    background-image:url(../images/bg.jpg);
+    /*background-color: darksalmon;
+    font-family: Arial, Helvetica, sans-serif;*/
+    font-family: 'Roboto Slab', serif;
+    background-repeat: repeat;
+    background-position: top left,bottom right;
+    background-size:100% 100%, 10% 10%;
+    margin-left:0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom:0 ;
+}
+ul li{
+    list-style-type:none;
+}
+ul li::before{
+    content:url(../images/z.png);
+
+}
+
+p::first-letter{
+    font-size:36px;
+    font-weight: bold;
+}
+
+p::first-line{
+    color:blue;
+    font-size:20px;
+    text-decoration: underline;
+}
+
+.tamaño{
+    height:6%;
+    width:100%;
+    background-color:silver;
+    padding:2px;
+    text-align: center;
+    margin-left:0;
+    margin-top:0;
+    margin-right: 0;
+    margin-bottom:0;
+    border:solid blue;
+    
+    
+    
+
+}
+.tamaño0{
+    height: 80%;
+    width:98%;
+    border:solid red;
+    background-color: moccasin;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom:0;
+    
+
+
+
+}
+
+.tamaño1{
+    height: 217px;
+    width:400px;
+    margin:0 auto;
+    background-color: blue;
+    font-weight:bolder;
+    font-size:1.2em;
+    /*font-variant: small-caps;*/
+    font-style: italic;
+    padding: 10px;
+    text-align:justify;
+    margin-top: 0;
+    border-left: solid;
+    border-width: 2px;
+    border-color: tomato;
+
+}
+
+.absoluto{
+    height:205px;
+    width:100%;
+    border: solid yellow;
+    margin-left: auto;
+    position:absolute;
+       
+}
+
+.fondo{
+
+    
+    background:url(../images/bg1.jpg);
+    background-repeat:no-repeat;
+    height:200px;
+    width:200px;
+    border: solid blue;
+    background-size:100% 100%;
+    background-position:bottom right;
+    position: relative;
+    left: 85%;
+    top:0%;
+    
+    
+       
+    
+}
+
+
+.fondo11{
+
+    
+    height:200px;
+    width:200px;
+    border: solid greenyellow;
+    background-size:50% 50%;
+    background-position:bottom right;
+    position: relative;
+    
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100&0.77+2,1+100 */
+    background: -moz-linear-gradient(top,  rgba(30,87,153,0.77) 0%, rgba(30,89,156,0.77) 2%, rgba(41,137,216,0.88) 50%, rgba(32,124,202,0.88) 51%, rgba(125,185,232,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(30,87,153,0.77) 0%,rgba(30,89,156,0.77) 2%,rgba(41,137,216,0.88) 50%,rgba(32,124,202,0.88) 51%,rgba(125,185,232,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(30,87,153,0.77) 0%,rgba(30,89,156,0.77) 2%,rgba(41,137,216,0.88) 50%,rgba(32,124,202,0.88) 51%,rgba(125,185,232,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c41e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+
+        
+}
+.absoluto3{
+    position:absolute;
+    height:50%;
+    width:50%;
+    border: solid greenyellow;
+    top:200%;
+    
+}
+
+.absoluto0{
+    position: relative;
+    left: 0%;
+    bottom:0%;
+}
+
+
+

@@ -32,7 +32,14 @@
         pug archivo.pug <br/>
         pug -w archivo.pug (Compila cada vez que cambie el archivo)<br/>
         pug -w --pretty archivo.pug (Compila con indentación) <br/>
-        pug directorio (Compila todos los archios en ese directorio).
+        pug directorio (Compila todos los archios en ese directorio). <br/>
+        <strong style='color:red; font-size: 1.4em'>pug -w src/PAGES -o DIST -p src/INCLUDES</strong> <br/>
+        Prepros es un programa gratuito que nos permite compilar por ejemplo archivo.pug a archivo.html <br/>
+        src (carpeta_de_archivos_de_trabajo / Desarrollo ) <br/>
+        dist (carpeta_de_archivos_compilados_llamada_tambien_public / Produccion) <br/>
+        src se subdivide en pages e include (Lo que está en pages debe compilarse a html y lo que 
+        está en includes no se debe compilar) <br/>
+        
     </p>
     <h1>Código JavaScript en PUG</h1>
     <p>Hay dos formas de insertar código JavaScript en PUG </p>
@@ -92,12 +99,69 @@
         </pre>
 
     </p>
-    <h1>Recorrer objetos</h1>
-    <p>
-        
-    </p>
     <p>
         p: a: br: (los dospuntos se indican para colocar etiquetas hijas)
+    </p>
+    <h1>Recorrer objetos</h1>
+    <p>
+        <pre>
+            -
+                const Ryh ={
+                    ceo: 'Henry'
+                    cto= 'Richard'
+                    coo= 'Martín'
+                }
+        <ul>
+            each val, key in Ryh 
+                li=val
+                li=`${val} es el ${key.toUpperCase()} de RyH`
+        </ul>
+        </pre>
+    </p>
+    <p>
+        Un Array vacio es TRUE pero un STRING vacio es FALSE.
+    </p>
+    <p>El include es para meter contenido específico en una estructura,
+        pero no puedes usar include para crear estructuras.
+    </p>
+    <p>include y la ruta en PUG debe ser relativa al archivo pug: <br/>
+        Ejemplos: include ../../public/css/styles.css
+    </p>
+    <p> Sintaxis para escribir javascript allí mismo: script. <br/>
+        alert('Hola_Mundo')
+    </p>
+    <p>
+        Si un block tiene contenido y es referencia el incicial será 
+        reemplazdo por el nuevo contenido. Para agregarlo se debe usar 
+        las instrucciones append (para agregar al inicio) y prepen (para 
+        agregar al final). Nada debe estar a nivel de los bloques (debe 
+        estar indentado). 
+    </p>
+    <p>
+        Las mejores opciones son usr variables globales que se sobre
+        escriban cuando sea necesario en el sitio web. para sobreescribir 
+        variables( creas un block 'config_en_la_plantilla' y en la página 
+        un append config_ para luego agregar el nombre de variable -pageTitle=
+        'nuevo_titulo').
+    </p>
+    <p>Los mixins son funciones que nos permiten devolver una estructura,
+        en forma de componentes o mini estructuras. Util para los botones 
+        que siempre tienen la misma estructura, menús de navegación (llanados
+        tambien componentes de UI).     
+    </p>
+    <p>Ejemplo de mixins</p>
+    <pre>
+        mixin card(image,title,desription)
+            article.card 
+                .card__image 
+                    img(src=`/assets/img/logo${image}`) 
+                h2.card__title=title 
+                p.card__body=description
+
+    </pre>
+    <p>
+        Dentro de un mixin puedes crear un block para agregarle 
+        contenido.
     </p>
     
 </body>
