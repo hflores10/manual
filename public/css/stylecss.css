@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 62.55;
+    font-size: 62.5%;
 }
 
 body{
@@ -28,3 +28,6 @@ h2{
     justify-content: center;
 }
 
+textarea{
+    font-size: 1.6rem;
+}
