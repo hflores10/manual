@@ -15,8 +15,16 @@ body{
 
 h1{
     text-align: center;
+    color: blue;
 }
 
 h2{
     text-align: center;
+    color:blue;
 }
+
+.test1{
+    display: flex;
+    justify-content: center;
+}
+
