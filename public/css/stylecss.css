@@ -2,6 +2,7 @@
     box-sizing:boder-box;
     margin: 0;
     padding: 0;
+    font-family: 'Dancing Script', cursive;
 }
 
 html{
@@ -10,24 +11,47 @@ html{
 
 body{
     font-size: 2rem;
+    background-color:azure;
         
 }
 
 h1{
+    
     text-align: center;
-    color: blue;
+    @extend .green-text, darken-4;
+    
 }
 
 h2{
     text-align: center;
-    color:blue;
+    @extend .green-text;
 }
 
 .test1{
     display: flex;
     justify-content: center;
+    
 }
 
 textarea{
     font-size: 1.6rem;
+}
+
+h1:hover{
+    color: black;
+}
+h2:hover{
+    color: black;
+}
+
+div p:nth-child(3){
+    color:blue;    
+}
+
+p::first-letter{
+    color: red;
+}
+
+p::after{
+    content:"emoji";
 }

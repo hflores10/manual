@@ -3,8 +3,15 @@
   <head> 
     <title>Tutor CSS </title>
     <link rel="stylesheet" href="../../css/stylecss.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body> 
+  <body class="green lighten-5 green-text text-darken-4"> 
     <h1>Nociones básicas </h1>
     <h2>Reglas de CSS</h2>
     <p>
@@ -34,11 +41,20 @@
       más grande)
     </p>
     <p>
-      Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por 
-      ejemplo :hover (aplicará un estilo cuando el usuario haga hover 
-      sobre el elemento especificado por el selector) 
+      Una PSEUDOCLASE CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por 
+      ejemplo :hover (aplicará un estilo cuando el usuario haga hover (flotar/El mouse este sobre en elemento)
+      sobre el elemento especificado por el selector).
     </p>
-    <h2>Contenedores y responsive desing </h2>
+    <br/>
+    <div>
+      <p>Ejemplo de div p:nth-child(3)</p>
+      <p>CSS</p>
+      <p>Lo</p>
+      <p>Mejor</p>
+    </div>
+    <p>SEUDOELEMENTO por ejemplo para estilizar la primera letra</p>
+    
+    <h2>Contenedores y Responsive Desing </h2>
     <p>Hagamos algo de diseño.</p>
     <p>Tamaño intrínseco (look and file) </p>
     <p>aria-lable='retrocecer 10s' (Para especificar un texto a una etiqueta sin texto) </p>
@@ -125,7 +141,28 @@
       flex-basis:10rem; (En contenedores hijos). <br/>
       flex-grow:1; (En contenedores hijos). <br/>
     </p>
-    
+    <h1>
+      Variables (custom properties)
+    </h1>
+    <p>
+      Elementos en CSS para generar variables. <br/>
+      :root {
+        --nombredevariable:valor;
+      }
 
+      Elegir paletas de colores y set de colores:<br/>
+      https://materializecss.com/ <br/>
+      Comentar código con control+shift+7 <br/>
+
+
+    </p>
+    <h1>Media Queries y Break Points</h1>
+    <p>
+
+    </p>
+    <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>button</a>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 </html>
