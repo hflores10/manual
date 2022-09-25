@@ -37,10 +37,13 @@ h2{
 .test1{
     display: flex;
     justify-content: center;
+    
 }
 
 textarea{
     font-size: 1.6rem;
+    width: 50%vw;
+    height: 160rem;
 }
 
 h1:hover{
